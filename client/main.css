@@ -1,36 +1,19 @@
-body{
-	background-color: #EAE6E3;
-}
-
-.post{
-	position: relative;
-	display: inline-block;
-	box-shadow: 0 3px 5px rgba(34, 25, 25, 0.4);
-	background-color: #FFFFA2;
-	padding: 10px;
-	margin-left: 10px;
-	margin-top: 10px;
+#body{
 	
-	width: 250px;
 }
 
-.main-content{
-	height: 500px;
-	width: 90%;
-	background-color: gray;
+#create{
+	margin: 1%;
+	padding: 5%;
+	-webkit-box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
-.submit-page{
-	background-color: #EBE7E4;
-}
-
-.sheet{
-	background-color: white;
-	padding: 10px;
-	box-shadow: 0 3px 5px rgba(34, 25, 25, 0.4);
-}
-
-.section-header{
-	color: green;
-	font-weight: 20em;
+.jobpage{
+	padding: 7%;
+	margin-top: 30px;
+	-webkit-box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
 }

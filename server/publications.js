@@ -1,7 +1,7 @@
-Meteor.publish('posts', function() { 
-	return Posts.find();
+Meteor.publish('jobs', function() { 
+	return Jobs.find();
 });
 
-Meteor.publish('appliactions', function () {
+Meteor.publish('applications', function () {
 	return Applications.find();
 });
