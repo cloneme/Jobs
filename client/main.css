@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 #body{
-	
+	font-family: 'Raleway', sans-serif;
 }
 
 #create{
@@ -10,10 +12,3 @@
 	box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
-.jobpage{
-	padding: 7%;
-	margin-top: 30px;
-	-webkit-box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: -5px 4px 5px 0px rgba(0,0,0,0.75);
-}

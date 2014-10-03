@@ -1,8 +1,22 @@
 <template name="layout">
 
-	<div class="container-fluid" id="body">
-		<div class="container">{{> loginButtons}}</div>
-		<div class="container">
+	<div class="container" id="body">
+		<div class="row">
+			<div class="col-sm-12">
+				<nav class="navbar navbar-default" role="navigation">
+				  <div class="container">
+				    {{> loginButtons}}
+				    <a href="{{pathFor 'jobs'}}">Jobs</a>
+				    <ul class="nav navbar-right">
+					  {{#if currentUser}}<li><a href="{{pathFor 'create'}}">Post A Job</a></li>
+					{{/if}}
+					</ul>
+				  </div>
+				</nav>
+			</div>	
+		</div>
+	
+		<div class="col-sm-12" id="yield">
 				
 			{{> yield}}
 				

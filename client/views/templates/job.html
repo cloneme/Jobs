@@ -6,6 +6,8 @@
   	<h2>{{jobTitle}}</h2>
   	<p>{{shortDescription}}</p>
   	
-  	<h1>Compensation: {{compensation}}</h1>
+  	<h4>Interested, yeah? Check out our site at <a href="{{url}}">{{url}}</a></h4>
+  	<h1>Compensation: {{compensation}}</h1><br>
+  	<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>
   </div>
 </template>
