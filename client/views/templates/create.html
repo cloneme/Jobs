@@ -4,33 +4,41 @@
 		<form class="form-horizontal" role="form">
 		  
 		  <div class="form-group">
-		    <label for="jobTitle" class="col-sm-2 control-label">Job Title</label>
-		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Job title" required>
+		    <label for="jobTitle" class="col-sm-3 control-label">Job Title</label>
+		    <div class="col-sm-9">
+		      <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Example: Javascript Dev, Web Developer, etc" required>
 		    </div>
 		  </div>
 		  
 		  <div class="form-group">
-		  	<label for="short-description" class="col-sm-2 control-label">Job Description</label>
-		  	<div class="col-sm-10">
+		  	<label for="short-description" class="col-sm-3 control-label">Job Description</label>
+		  	<div class="col-sm-9">
 		  		<textarea rows="3" class="form-control" id="short-description" name="shortDescription" placeholder="A short description" required></textarea>
 		  	</div>
 		  </div>
 
+		  <div class="form-group">
+		    <label for="organization" class="col-sm-3 control-label">Organization</label>
+		    <div class="col-sm-9">
+		      <input type="text" class="form-control" id="organization" name="organization" 
+		      		placeholder="Name of your organization" required>
+		    </div>
+		  </div>
+
 
 
 		  <div class="form-group">
-		    <label for="url" class="col-sm-2 control-label">Website</label>
-		    <div class="col-sm-10">
-		      <input type="url" class="form-control" id="url" name="url" placeholder="Your company url (If any)">
+		    <label for="url" class="col-sm-3 control-label">Website</label>
+		    <div class="col-sm-9">
+		      <input type="url" class="form-control" id="url" name="url" placeholder="Your company URL">
 		    </div>
 		  </div>
 
 		  
 
 		  <div class="form-group">
-		  	<label for="schedule" class="col-sm-2 control-label">Schedule</label>
-		  	<div class="col-sm-10">
+		  	<label for="schedule" class="col-sm-3 control-label">Schedule</label>
+		  	<div class="col-sm-9">
 		  		<select class="form-control" id="schedule" name="schedule" required>
                     <option>Full time</option>
                     <option>Part time</option>
@@ -42,8 +50,8 @@
 
 
 		  <div class="form-group">
-		  	<label for="compensation" class="col-sm-2 control-label">Compensation</label>
-		  	<div class="col-sm-10">
+		  	<label for="compensation" class="col-sm-3 control-label">Compensation</label>
+		  	<div class="col-sm-9">
 		  		<select class="form-control" id="compensation" name="compensation" required>
                     <option>100,000 - 200,000K</option>
                     <option>200,000 - 300,000K</option>
@@ -55,27 +63,27 @@
 
 
 		  <div class="form-group">
-		    <label for="added-benefits" class="col-sm-2 control-label">Added benefits</label>
-		    <label class="col-sm-10">
+		    <label for="added-benefits" class="col-sm-3 control-label">Added benefits</label>
+		    <label class="col-sm-9">
 		      <input type="checkbox" id="added-benefits" name="addedBenefits1" value="bonus"> Bonus
 		    </label>
-		    <label class="col-sm-10">
+		    <label class="col-sm-9">
 		      <input type="checkbox" id="added-benefits" name="addedBenefits2" value="commission"> Commission
 		    </label>
 		    
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="added-requirements" class="col-sm-2 control-label">Additional Requirements</label>
-		  	<div class="col-sm-10">
-		  		<textarea rows="3" class="form-control" id="added-requirements" name="addedRequirements" placeholder="Requirements, other than Meteor"></textarea>
+		  	<label for="added-requirements" class="col-sm-3 control-label">Additional Requirements</label>
+		  	<div class="col-sm-9">
+		  		<textarea rows="4" class="form-control" id="added-requirements" name="addedRequirements" placeholder="Requirements, other than Meteor"></textarea>
 		  	</div>
 		  </div>
 
 		  
 		  <div class="form-group">
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="submit" class="btn btn-success">Submit Job</button>
+		    <div class="col-sm-offset-3 col-sm-9">
+		      <button type="submit" class="btn btn-success submit">Submit Job</button>
 		    </div>
 		  </div>
 		</form>
