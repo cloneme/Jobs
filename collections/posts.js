@@ -1,13 +1,7 @@
 Jobs = new Meteor.Collection('jobs');
 
-Jobs.allow({
-  update: ownsDocument,
-  remove: ownsDocument,
-});
 
-Jobs.deny({
-	remove: !ownsDocument
-});
+
 /*Jobs.deny({
 	update: function(userId, post, fields) {
 	    // may only edit the following two fields:
@@ -38,4 +32,3 @@ Meteor.methods({
 });
 
 
-Applications = new Meteor.Collection('applications');
