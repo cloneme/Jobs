@@ -1,0 +1,8 @@
+Template.jobs.events({
+	'click #apply': function()
+	{
+
+	Application.insert({userId:Meteor.user()._id,jobId:"ddksBgED5wWegFm3h"});
+
+	}
+})
