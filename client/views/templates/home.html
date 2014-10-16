@@ -1,16 +1,43 @@
 <template name="home">
 	<div class="main">
-		
+		{{#if currentUser}}
+		<div>
+			<h2>Jobs that you've posted!</h2>
+			<div>
+			{{> myjobs}}
+			</div>
+
+		</div>
+
+
+		<div>
+			<h2>Jobs applied!</h2>
+			{{> view}}
+
+		</div>
+		{{/if}}
 	</div>
 </template>
 
-<template name="myjobs">
 
-{{#each jobs}}
+<template name="view">
+	<div>
+		{{#each application}}
+			{{> applied}}
+		{{/each}}
+	</div>
+</template>
 
-<h1> {{jobTitle}}</h1>
-
-{{/each}}
-
-
+<template name="viewapp">
+	<div class="container">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<h1>{{name}}</h1><p>{{about}}</p>
+	</div>
 </template>
