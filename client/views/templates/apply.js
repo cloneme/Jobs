@@ -8,28 +8,32 @@ Template.application.helpers({
 
 
 Template.application.events({
-	"click #apply": function (e) {
+	"click #apply": function (e, err) {
 		
 		var jobId = Session.get('jobId');
+		var postedBy = this.author;
+		alert(postedBy);
+		var applicant = Meteor.user().username;
 		
-		
-
 		var application = {
 			name: $('#name').val(),
+			email: $('#email').val(),
 			about: $("#about").val(),
 			jobId: jobId,
-			applicant: Meteor.user().username,
-			//postedBy: jobId.username
+			applicant: applicant, //Meteor.user().username,
+			postedBy: postedBy,
+			submitted: new Date()
+			
 
 			
 
 		};
 
 		
-		alert("Hiya!");
+		alert(applicant);
 		application._id = Applications.insert(application);
 
-		Router.go('/jobs');
+		Router.go('/');
 		
 
 	},
