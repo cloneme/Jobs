@@ -9,3 +9,4 @@ Meteor.publish('applications', function () {
 Meteor.publish('myjobs',function() {
 	return Jobs.find({userId:this.userId})
 });
+
