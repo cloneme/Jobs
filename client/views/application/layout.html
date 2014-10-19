@@ -1,20 +1,25 @@
 <template name="layout">
 
+	<div class="container-fluid" id="body">
 	<div class="container" id="body">
 		<div class="row">
-			<div class="col-sm-12">
-				<nav class="navbar navbar-default" role="navigation">
-				  <div class="container">
-				    {{> loginButtons}}
-				    <a href="{{pathFor 'jobs'}}">Jobs</a>
-				    <ul class="nav navbar-right">
-					  {{#if currentUser}}<li><a href="{{pathFor 'create'}}">Post A Job</a></li>
+			<div class="col-sm-12 col-md-12">
+				<nav class="navbar" role="navigation" style="background-color: orange">
+					<ul class="">
+					<a>{{> loginButtons}}</a>
+					<a href="{{pathFor 'jobs'}}"><button class="btn">Jobs</button></a>
+					 
+					 {{#if currentUser}}<a href="{{pathFor 'create'}}"><button class="btn">Post A Job</button></a>
+					  <!--<a>{{> logout}}</a>-->
 					{{/if}}
 					</ul>
-				  </div>
+				  
 				</nav>
+
 			</div>	
 		</div>
+
+		
 
 		
 		<div class="col-sm-12" id="yield">
@@ -22,5 +27,10 @@
 			{{> yield}}
 				
 		</div>
+	</div>
 	</div>		
+</template>
+
+<template name="logout">
+	<button id="logout" class="btn-success">Log Out</button>
 </template>
