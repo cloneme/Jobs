@@ -3,3 +3,11 @@
 		<a href="{{pathFor 'viewapp'}}" style="color: white"><p>{{name}}</p></a>
 	
 </template>
+
+<template name="view">
+	
+		{{#each application}}
+			{{> applied}}
+		{{/each}}
+	
+</template>
