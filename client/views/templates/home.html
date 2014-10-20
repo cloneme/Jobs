@@ -1,7 +1,9 @@
+
+<!-- Home view template // Home view template -->
+
 <template name="home">
 	
 		{{#if currentUser}}
-		
 			
 				<div class="col-md-6 main">
 					
@@ -14,22 +16,14 @@
 					{{> view}}
 				</div>
 			
-		
+		{{/if}}
+
+		{{#if noUser}}
+			<h1>Uh-oh, looks like you don't wanna log in. :( <br> I've got some job for you!</h1>
+			<div>
+				{{> jobs}}
+			</div>
+			
 		{{/if}}
 	
-</template>
-
-
-
-
-<template name="viewapp">
-	<div class="container">
-	<br>
-		<h3>{{name}}</h3>
-		<a href="mailto:{{email}}" style="color: orange">{{email}}</a>
-		<p>{{about}}</p>
-		
-		<p>Applicant: {{applicant}}</p>
-		<p>Date applied: {{submitted}}</p>
-	</div>
 </template>
