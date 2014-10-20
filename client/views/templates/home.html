@@ -3,13 +3,13 @@
 		{{#if currentUser}}
 		<div class="row">
 			<div class="col-sm-6">
-				<h2>Jobs that you've posted!</h2>
+				
 				{{> myjobs}}
 			</div>
 
 
 			<div class="col-sm-6">
-				<h2>Jobs applied!</h2>
+				
 				{{> view}}
 			</div>
 		</div>	
@@ -22,14 +22,6 @@
 	</div>
 </template>
 
-
-<template name="view">
-	
-		{{#each application}}
-			{{> applied}}
-		{{/each}}
-	
-</template>
 
 
 
