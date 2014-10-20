@@ -1,13 +1,16 @@
 
-<!-- JOB-PAGE ******************************** JOB-PAGE ***************************** JOB-PAGE -->
+<!-- Individual job view // Individual job view // Individual job view -->
 
 <template name="job">
-  <div class="col-sm-10 jobpage">
-  	<h2>{{jobTitle}}</h2>
-  	<p>{{shortDescription}}</p>
-  	
-  	<h4>Interested, yeah? Check out our site at <a href="{{url}}">{{url}}</a></h4>
-  	<h1>Compensation: {{compensation}}</h1><br>
-  	<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>
-  </div>
+	<div class="col-sm-3 col-md-3"></div>
+	  <div class="col-sm-6 col-md-6 jobpage">
+	  	<h2>{{jobTitle}}</h2>
+	  	<p>{{shortDescription}}</p>
+	  	
+	  	<h4>Interested, yeah? Check out our site at <a href="{{url}}">{{url}}</a></h4>
+	  	<h1>Compensation: {{compensation}}</h1><br>
+	  	<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>
+	  </div>
+
+  	<div class="col-sm-3 col-md-3"></div>
 </template>
