@@ -1,35 +1,18 @@
+<!-- Main Layout // Main Layout // Main Layout -->
+
 <template name="layout">
 
 	<div class="container-fluid" id="moody">
 		<div class="container" id="body">
+			
 			<div class="row">
 				{{> navigation}}				
-
-				<!--<div class="col-sm-12 col-md-12">
-					<nav class="navbar navbar-default main-nav" role="navigation" style="background-color: orange">
-						<ul>
-							<a href="http://localhost:3000/">Meteor Jobs</a>
-							
-							<a href="{{pathFor 'jobs'}}">Jobs</a>
-							 
-							 	{{#if currentUser}}
-								 	<a href="{{pathFor 'create'}}">Post A Job</a>
-								  	<a id="main-logout">{{> logout}}</a>
-								{{/if}}
-							
-							<a id="main-login"><p>{{> loginButtons}}</p></a>
-						</ul>
-					  
-					</nav>
-
-				</div>-->	
-			
 			</div>
 
 			
 
-			<div class="row">
-				<div class="col-sm-12" id="yield">
+			<div class="row" style="text-align: center">
+				<div class="col-sm-12 col-md-12" id="yield">
 						
 					{{> yield}}
 						
@@ -37,7 +20,7 @@
 			</div>
 
 			<div class="row">
-				<footer class="col-sm-12" style="text-align: center; margin-top: 20%; background-color: teal">
+				<footer class="col-sm-12 fixed-bottom" style="text-align: center; margin-top: 200px; background-color: teal">
 					<h2>Hademade in <a href="http://jaaga.in/study">Jaaga</a></h2>
 				</footer>
 			</div>
@@ -46,6 +29,8 @@
 </template>
 
 
+<!-- Navigation Template // Navigation Template // Navigation Template -->
+	
 	<template name="navigation">
 		<div class="navbar navbar-default main-nav" role="navigation" style="background-color: orange">
             <div class="navbar-header">
