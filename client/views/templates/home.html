@@ -1,25 +1,22 @@
 <template name="home">
-	<div class="main">
+	
 		{{#if currentUser}}
-		<div class="row">
-			<div class="col-sm-6">
-				
-				{{> myjobs}}
-			</div>
-
-
-			<div class="col-sm-6">
-				
-				{{> view}}
-			</div>
-		</div>	
-		{{/if}}
-
 		
+			
+				<div class="col-md-6 main">
+					
+					{{> myjobs}}
+				</div>
 
 
-
-	</div>
+				<div class="col-md-6 main">
+					
+					{{> view}}
+				</div>
+			
+		
+		{{/if}}
+	
 </template>
 
 
@@ -29,7 +26,7 @@
 	<div class="container">
 	<br>
 		<h3>{{name}}</h3>
-		<a href="mailto:{{email}}">{{email}}</a>
+		<a href="mailto:{{email}}" style="color: orange">{{email}}</a>
 		<p>{{about}}</p>
 		
 		<p>Applicant: {{applicant}}</p>
