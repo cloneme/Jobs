@@ -10,7 +10,10 @@
 
 	{{#if haveApplied}}
 		<p>Whoa! Looks like you haven't posted any jobs yet.</p>
-		<p>Come on, <a href="{{pathFor 'create'}}">Post A Job</a> already.</p>
+		<p>Oh, come on, <a href="{{pathFor 'create'}}">post a job</a> already.</p>
+		<div class="col-md-12">
+			{{> create}}
+		</div>
 	{{/if}}
 
 	
