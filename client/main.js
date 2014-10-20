@@ -16,22 +16,5 @@ Template.login.events({
 	}
 })
 
-Template.pro.helpers({
-	user: function() {
-		var user = Meteor.user();
-		return user.username;
-	},
 
-	userId: function() {
-		return Meteor.userId();
-	}
-});
-
-Template.logout.events({
-	"click #logout": function () {
-		Meteor.logout(function () {
-			alert("You're logged out!");
-		});
-	}
-});
 
