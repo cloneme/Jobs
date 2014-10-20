@@ -1,13 +1,35 @@
+
+<!-- individual applications -->
 <template name="applied">
 	
 		<a href="{{pathFor 'viewapp'}}" style="color: white"><p>{{name}}</p></a>
 	
 </template>
 
+
+<!-- View for list of applications -->
 <template name="view">
-	
+	<h2>Applications</h2>
 		{{#each application}}
 			{{> applied}}
 		{{/each}}
+
+		{{#if haveApplied}}
+			<p>Haven't applied!</p>
+		{{/if}}
 	
 </template>
+
+<!-- View for an individual application -->
+<template name="viewapp">
+	<div class="container">
+	<br>
+		<h3>{{name}}</h3>
+		<a href="mailto:{{email}}">{{email}}</a>
+		<p>{{about}}</p>
+		
+		<p>Applicant: {{applicant}}</p>
+		<p>Date applied: {{submitted}}</p>
+	</div>
+</template>
+

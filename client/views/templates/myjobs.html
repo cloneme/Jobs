@@ -1,11 +1,17 @@
 <template name="myjobs">
-
+	<h2>Jobs that you've posted!</h2>
+	
 	{{#each jobs}}
 
 		<a href="/jobs/{{_id}}" style="color: white"><p> {{jobTitle}}</p></a>
 
 
 	{{/each}}
+
+	{{#if haveApplied}}
+		<p>Whoa! Looks like you haven't posted any jobs yet.</p>
+		<p>Come on, <a href="{{pathFor 'create'}}">Post A Job</a> already.</p>
+	{{/if}}
 
 	
 </template>

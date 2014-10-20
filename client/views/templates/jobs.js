@@ -4,7 +4,16 @@ Template.jobs.helpers({
 	return Jobs.find({}, {sort: {submitted: -1}}); }
 });
 
-Template.myjobs.jobs = function()
-{
-	return Jobs.find({userId:Meteor.user()._id});
-}
+Template.myjobs.helpers({
+	
+	jobs: function  () {
+		return Jobs.find({userId: Meteor.user()._id});	
+	},
+
+	haveApplied: function () {
+		
+		if (Jobs.find({userId: Meteor.user()._id}).count() === 0) {
+			return true;
+		};
+	}
+});
