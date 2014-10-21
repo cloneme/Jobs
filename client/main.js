@@ -16,5 +16,11 @@ Template.login.events({
 	}
 })
 
+//notFound template helper for undefined paths
 
+Template.notFound.events({
+	"click #yes": function  () {
+		Router.go('home')
+	}
 
+});
