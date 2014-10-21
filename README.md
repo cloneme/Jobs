@@ -1,8 +1,7 @@
-Meteor Jobs
+<h1>Jobb</h1>
 ===========
 
-Hi there, Jobs is a simple job portal that I'm building using the <a href="http://meteor.com">Meteor Framework,</a> and learning in the process too.
-This is my first programming project of any kind. Lots and lots to learn. Miles to go before I sleep.
+<h4>Hi there, welcome to the Jobb repository.</h4>
+Jobb is a, right, job platform 'boilerplate' built with <a href="http://meteor.com">Meteor.</a> There was no intention to actually make a job marketplace and as you can see, it is not. ;) But feel free to clone it and make it your own. There's nothing much in this platform, but you surely can add 'things' to it.
 
-Please feel free to clone this repo and make it your own. Cheerio, friend!
-
+You can try it out at <a href="http://jobb.meteor.com">jobb.meteor.com</a>
