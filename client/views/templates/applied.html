@@ -14,7 +14,7 @@
 			{{> applied}}
 		{{/each}}
 
-		{{#if haveApplied}}
+		{{#if notApplied}}
 			<p>Nope, empty!</p>
 			<br>
 			<br>
@@ -26,14 +26,18 @@
 
 <!-- View for an individual application -->
 <template name="viewapp">
-	<div class="container">
-	<br>
-		<h3>{{name}}</h3>
-		<a href="mailto:{{email}}">{{email}}</a>
-		<p>{{about}}</p>
+	<div class="col-md-3 col-sm-3"></div>
+	
+	<div class="container col-md-6 col-sm-6 jobpage">
+		<br>
+		<h3>Name: {{name}}</h3>
+		<p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
+		<p>Extra: {{about}}</p>
 		
-		<p>Applicant: {{applicant}}</p>
+		<p>Applicant username: {{applicant}}</p>
 		<p>Date applied: {{submitted}}</p>
 	</div>
+
+	<div class="col-md-3 col-sm-3"></div>
 </template>
 

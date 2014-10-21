@@ -10,7 +10,7 @@ Template.view.helpers({
 
 	},
 
-	haveApplied: function () {
+	notApplied: function () {
 		var user = Meteor.user();
 		var user = user.username;
 		if (Applications.find({postedBy: user}).count() === 0) {
