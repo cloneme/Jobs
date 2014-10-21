@@ -19,11 +19,19 @@
 		{{/if}}
 
 		{{#if noUser}}
-			<h1>Uh-oh, looks like you don't wanna log in. :( <br> I've got some job for you!</h1>
+			{{> intro}}
+			<!--<h1>Uh-oh, looks like you don't wanna log in. :( <br> I've got some job for you!</h1>
 			<div>
 				{{> jobs}}
-			</div>
+			</div>-->
 			
 		{{/if}}
 	
+</template>
+
+<template name="intro">
+	<h1>Hi there, welcome to Jobb.</h1>
+	<h4>Jobb is a job platform 'boilerplate' built with <a href="http://meteor.com">Meteor</a><br>There was no intention to actually make a job marketplace and as you can see, it is not. <br> But feel free to clone it from <a href="https://github.com/cloneme/Jobs">Github</a> and make it your own. <br> There's nothing much in this platform, but you surely can add 'things' to it.</h4>
+
+	<h4>Please sign in to try it out.</h4>
 </template>
