@@ -9,8 +9,6 @@ Template.create.events({
 			url: $(e.target).find('[name=url]').val(),
 			schedule: $(e.target).find('[name=schedule]').val(),
 			compensation: $(e.target).find('[name=compensation]').val(),
-			addedBenefits1: $(e.target).find('[name=addedBenefits1]').val(),
-			addedBenefits2: $(e.target).find('[name=addedBenefits2]').val(),
 			addedRequirements: $(e.target).find('[name=addedRequirements]').val(),
 
 		}
