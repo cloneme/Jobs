@@ -3,13 +3,17 @@
 
 <template name="job">
 	<div class="col-sm-3 col-md-3"></div>
-	  <div class="col-sm-6 col-md-6 jobpage">
+	  <div class="col-sm-6 col-md-6 jobpage" style="text-align: justify">
 	  	<h2>{{jobTitle}}</h2>
 	  	<p>{{shortDescription}}</p>
-	  	
-	  	<h4>Interested, yeah? Check out our site at <a href="{{url}}">{{url}}</a></h4>
-	  	<h1>Compensation: {{compensation}}</h1><br>
-	  	<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>
+	  	<br>
+	  	<h4>Where: {{organization}}</h4>
+	  	<h4>Schedule: {{schedule}}</h4>
+	  	<h4>Compensation: {{compensation}}</h4><br>
+	  	<p>{{addedRequirements}}</p>
+
+	  	<h4>Check out our site at <a href="{{url}}">{{url}}</a></h4>
+	  	<h4>Interested, yeah? <a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a></h4>
 	  </div>
 
   	<div class="col-sm-3 col-md-3"></div>
