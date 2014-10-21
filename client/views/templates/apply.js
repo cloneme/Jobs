@@ -8,7 +8,9 @@ Template.application.helpers({
 
 
 Template.application.events({
-	"click #apply": function (e, err) {
+	"submit form": function (e, err) {
+		
+		e.preventDefault();
 		
 		var jobId = Session.get('jobId');
 		var postedBy = this.author;
@@ -19,6 +21,7 @@ Template.application.events({
 			name: $('#name').val(),
 			email: $('#email').val(),
 			about: $("#about").val(),
+			github: $('#github').val(),
 			jobId: jobId,
 			applicant: applicant, //Meteor.user().username,
 			postedBy: postedBy,
@@ -30,7 +33,7 @@ Template.application.events({
 		};
 
 		
-		alert(applicant);
+		//alert(applicant);
 		application._id = Applications.insert(application);
 
 		Router.go('/');
