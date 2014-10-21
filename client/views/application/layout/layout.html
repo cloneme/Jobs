@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="row">
-				<footer class="col-sm-12 fixed-bottom" style="text-align: center; margin-top: 200px; background-color: teal">
+				<footer class="col-sm-12 fixed-bottom" style="text-align: center; margin-top: 200px; background-color: teal; padding: 5px">
 					<h2>Hademade in <a href="http://jaaga.in/study">Jaaga</a></h2>
 				</footer>
 			</div>
@@ -42,15 +42,15 @@
             <div class="navbar-collapse collapse">
             	
                 <ul class="nav navbar-nav">
-                    <li class="nav"><a href="http://localhost:3000">Meteor Jobs</a>
+                    <li class="nav"><a href="{{pathFor 'home'}}">Meteor Jobs</a>
                     </li>
                     <li class="nav"><a href="{{pathFor 'jobs'}}">Jobs</a>
                     </li>
                     {{#if currentUser}}
-                    <li class="nav"><a href="{{pathFor 'create'}}">Post A Job</a>
-                    </li>
-                    <li class="nav"><a id="main-logout">{{> logout}}</a>
-                    </li>
+	                    <li class="nav"><a href="{{pathFor 'create'}}">Post A Job</a>
+	                    </li>
+	                    <li class="nav"><a href="#" id="main-logout">{{> logout}}</a>
+	                    </li>
                     {{/if}}
                     <li class="nav"><a id="main-login"><p>{{> loginButtons}}</p></a>
                     </li>
