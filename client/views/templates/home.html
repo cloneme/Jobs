@@ -8,6 +8,8 @@
 				<div class="col-md-6 main">
 					
 					{{> myjobs}}
+					
+
 				</div>
 
 
@@ -20,10 +22,6 @@
 
 		{{#if noUser}}
 			{{> intro}}
-			<!--<h1>Uh-oh, looks like you don't wanna log in. :( <br> I've got some job for you!</h1>
-			<div>
-				{{> jobs}}
-			</div>-->
 			
 		{{/if}}
 	
@@ -31,8 +29,8 @@
 
 <template name="intro">
 	<div style="margin: 5.5%; padding: 5%; background-color: white">
-		<h1>Hi there, welcome to Jobb.</h1>
-		<p>Jobb is a job platform 'boilerplate' built with <a href="http://meteor.com">Meteor</a><br>There was no intention to actually make a job marketplace and as you can see, it is not. <br> But feel free to clone it from <a href="https://github.com/cloneme/Jobs">Github</a> and make it your own. <br> There's nothing much in this platform, but you surely can add 'things' to it.</p>
+		<h2>Ola, welcome to Jobb.</h2>
+		<p>Jobb is a lean job platform built with <a href="http://meteor.com">Meteor.</a><br>There was no intention to actually make a job marketplace and as you can see, it is not. <br> Feel free to clone it from <a href="https://github.com/cloneme/Jobs">Github</a> and make it your own. <br> There's nothing much than the basics, but you surely can add 'things' to it.</p>
 
 		<h4>Please sign in to try it out.</h4>
 	</div>

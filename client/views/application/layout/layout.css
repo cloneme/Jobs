@@ -27,9 +27,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', end
 	padding-right: 3px;
 
 }
-
-footer {
-  position: fixed;
-  z-index: 1; /* integer */
-
+ 
+footer a:hover {
+	text-decoration: none;
+	color: yellow;
+	
 }

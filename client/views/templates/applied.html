@@ -2,24 +2,20 @@
 <!-- individual applications -->
 <template name="applied">
 	
-		<a href="{{pathFor 'viewapp'}}" style="color: white"><p>{{name}}</p></a>
+		<a href="{{pathFor 'viewapp'}}"><p  class="blocks">{{name}}</p></a>
 	
 </template>
 
 
 <!-- View for list of applications -->
 <template name="view">
-	<h2>Applications</h2>
+	<h1>Applications</h1>
 		{{#each application}}
 			{{> applied}}
 		{{/each}}
 
 		{{#if notApplied}}
-			<p>Nope, empty!</p>
-			<br>
-			<br>
-			<br>
-			{{> create}}
+			<p>Nope, no one has applied for one! <br> Have you posted any job?</p>
 		{{/if}}
 	
 </template>
@@ -32,7 +28,7 @@
 		<br>
 		<h3>Name: {{name}}</h3>
 		<p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
-		<p>Extra: {{about}}</p>
+		<p>{{about}}</p>
 		
 		<p>Applicant username: {{applicant}}</p>
 		<p>Date applied: {{submitted}}</p>
