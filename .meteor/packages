@@ -7,4 +7,5 @@ meteor-platform
 iron:router
 accounts-password
 accounts-ui
+accounts-base
 matthew:foundation5-sass
