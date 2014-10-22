@@ -24,3 +24,23 @@ Template.notFound.events({
 	}
 
 });
+
+Template.navigation.helpers({
+
+	currentUser: function () {
+			return Meteor.user().username;
+
+	},
+
+	noUser: function () {
+		var user = Meteor.user();
+		
+		if (user) {
+			return false;
+		} else {
+			return true;
+		};
+	}
+
+
+});
