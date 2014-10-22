@@ -1,19 +1,23 @@
+
+<!-- View for the jobs posted by the currentUser -->
+
 <template name="myjobs">
-	<h2>Jobs that you've posted!</h2>
+	<h1>Jobs that you've posted!</h1>
 	
 	{{#each jobs}}
 
-		<a href="/jobs/{{_id}}" style="color: white"><p> {{jobTitle}}</p></a>
+		<a href="/jobs/{{_id}}"><p class="blocks"> {{jobTitle}}</p></a>
 
 
 	{{/each}}
 
-	{{#if haveApplied}}
-		<p>Whoa! Looks like you haven't posted any jobs yet.</p>
-		<p>Oh, come on, <a href="{{pathFor 'create'}}">post a job</a> already.</p>
-		<div class="col-md-12">
-			{{> create}}
-		</div>
+	
+	<!-- Will show this view if user haven't posted any job yet -->
+	
+	{{#if notPosted}}
+		<p>Whoa! Looks like you haven't posted any job yet.<br>
+		Come on, <a href="{{pathFor 'create'}}">post a job</a> already. <br> <br>Or if you're looking to apply for one<br> then we've got you covered. <a href="{{pathFor 'jobs'}}">Let's go!</a> </p>
+		
 	{{/if}}
 
 	
