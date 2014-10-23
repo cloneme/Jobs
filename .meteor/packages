@@ -5,6 +5,7 @@
 
 meteor-platform
 iron:router
+spin
 accounts-password
 accounts-ui
 accounts-base

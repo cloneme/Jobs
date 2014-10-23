@@ -8,6 +8,8 @@ Template.login.events({
 
 		Meteor.loginWithPassword(username, password, function (err, success) {
 			if (err) {
+
+				var err = err;
 				alert(err);
 			} else {
 				Router.go('/jobs');
