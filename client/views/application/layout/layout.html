@@ -8,8 +8,11 @@
 			<div class="row">
 				{{> navigation}}				
 			</div>
-
-			
+			<div>
+				{{#if loggingIn}}
+				{{spinner}}
+				{{/if}}
+			</div>
 
 			<div class="row" style="text-align: center">
 				<div class="col-sm-12 col-xs-12 col-md-12">
