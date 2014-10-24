@@ -3,14 +3,14 @@
 <template name="layout">
 
 	<div class="container-fluid" id="moody">
-		<div class="container" id="body">
+		<!-- <div class="container" id="body"> -->
 			
 			<div class="row">
 				{{> navigation}}				
 			</div>
 			
-			<div class="row">
-				
+			<div class="row" style="margin-top: 100px">
+				<div class="container">
 						
 					{{> yield}}
 
@@ -25,16 +25,16 @@
 					  ga('send', 'pageview');
 
 					</script>
-						
+				</div>	
 				
 			</div>
 
 			<div class="row">
-				<footer class="col-sm-12" style="text-align: center; margin-top: 250px; background-color: teal; padding: 5px">
-					<h3>Hademade in <a style="color: white" href="http://jaaga.in/study">Jaaga</a> with <a style="color: white" href="http://meteor.com">Meteor</a></h3>
+				<footer class="col-sm-12" style="text-align: center; margin-top: 250px; background-color: #F3F3F3; padding: 5px">
+					<h3 style="color: teal">Handmade in <a style="color: teal" href="http://jaaga.in/study">Jaaga</a> with <a style="color: teal" href="http://meteor.com">Meteor</a></h3>
 				</footer>
 			</div>
-		</div>
+		<!-- </div> -->
 	</div>		
 </template>
 
@@ -42,7 +42,7 @@
 <!-- Navigation Template // Navigation Template // Navigation Template -->
 	
 	<template name="navigation">
-		<div class="navbar navbar-default main-nav col-xs-12" role="navigation" style="background-color: white">
+		<div class="navbar navbar-default navbar-fixed-top main-nav col-xs-12" id="nav" role="navigation">
 			<div class="navbar-header">
             	
                 <button class="btn btn-success navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
@@ -54,7 +54,7 @@
             <div class="navbar-collapse collapse">
             	
                 <ul class="nav nav-pills">
-                    <li class="nav"><a href="{{pathFor 'home'}}">Jobb & Jobb</a>
+                    <li class="nav"><a href="{{pathFor 'home'}}">Home</a>
                     </li>
                     <li class="nav"><a href="{{pathFor 'jobs'}}">Jobs</a>
                     </li>
