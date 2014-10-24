@@ -1,9 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
-#body{
-	font-family: 'Raleway', sans-serif;
-	text-decoration: none;
-}
 
 .jobpage{
 	padding: 20px;
@@ -39,22 +35,19 @@
 }
 
 .indie-job{
-	background-color: #5bc4be;
+	/*background-color: #5bc4be;*/
+	background-color: #F6A926;
 	position: relative;
 	display: inline-block;
 	padding: 1%;
 	margin: 0.5%;
 	text-align: center;
 	width: 300px;
-
+	color: black;
 	-webkit-box-shadow: -1px 2px 12px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    -1px 2px 12px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:       -1px 2px 12px 0px rgba(50, 50, 50, 0.75);
 	
-}
-
-.indie-job:link{
-	text-decoration: inherit;
 }
 
 .jobs{
@@ -64,8 +57,9 @@
 
 }
 
-a{
+.jobs a:link{
 	text-decoration: none;
+	
 }
 
 

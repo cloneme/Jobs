@@ -1,28 +1,33 @@
-Meteor.subscribe('jobs');
-
 Template.login.events({
-	"click #login": function () {
+	"submit form": function (e, err) {
+		e.preventDefault();
+		
 		var username = $('#username').val();
 		var password = $('#password').val();
 
-
+		
 		Meteor.loginWithPassword(username, password, function (err, success) {
 			if (err) {
-
-				var err = err;
 				alert(err);
 			} else {
-				Router.go('/jobs');
+				alert("You're being logged in. Now let's go home!");
+				Router.go('/');
 			}
 		});
 	}
 })
+
+
 
 //notFound template helper for undefined paths
 
 Template.notFound.events({
 	"click #yes": function  () {
 		Router.go('home')
+	},
+
+	"click #no": function () {
+		Router.go('https://google.com')
 	}
 
 });

@@ -2,10 +2,9 @@
 
 Template.jobs.helpers({ 
 	jobs: function() {
-
-	//var user = Meteor.user()._id;
 	return Jobs.find({}, {sort: {submitted: -1}}); },
 
+	
 
 });
 
