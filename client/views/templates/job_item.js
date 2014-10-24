@@ -2,18 +2,25 @@ Template.jobItem.helpers({
 
 	ownPost: function() {
 	return this.userId == Meteor.userId(); 
-	
+
 	},
 
-	
 });
 
 
 Template.job.helpers({
 
-	ownPost: function() {
-	return this.userId == Meteor.userId(); 
+		ownPost: function() {
+		return this.userId == Meteor.userId(); 
+		
+		},
+
+		notOwnPost: function () {
+			return this.userId !== Meteor.userId();
+		}
 	
-	},
+	
+
+	
 
 });

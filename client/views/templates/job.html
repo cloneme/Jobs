@@ -1,22 +1,27 @@
 
 <!-- Individual job view // Individual job view // Individual job view -->
 
-<template name="job">
-	<div class="col-xs-1 col-sm-2 col-md-2"></div>
-	  <div class="col-xs-10 col-sm-8 col-md-8 jobpage" style="text-align: justify">
-	  	<h2>{{jobTitle}}</h2>
-	  	<p>{{shortDescription}}</p>
-	  	<br>
-	  	<p>Where: {{organization}}</p>
-	  	<p>Schedule: {{schedule}}</p>
-	  	<p>Compensation: {{compensation}}</p><br>
-	  	<p>{{addedRequirements}}</p>
+		<template name="job">
+		  <div class="col-xs-1 col-sm-2 col-md-2"></div>
+		  
+		  <div class="col-xs-10 col-sm-8 col-md-8 jobpage">
+		  	<h2>{{jobTitle}}</h2>
+		  	<p>{{shortDescription}}</p>
+		  	<br>
+		  	<p>Where: {{organization}}</p>
+		  	<p>Schedule: {{schedule}}</p>
+		  	<p>Compensation: {{compensation}}</p><br>
+		  	<p>{{addedRequirements}}</p>
 
-	  	<p>Check out our site at <a href="{{url}}">{{url}}</a></p>
-	  	<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>
-	  	{{#if ownPost}}<a href="{{pathFor 'jobEdit'}}"><button class="btn btn-primary">Edit</button></a>{{/if}}
-	  </div>
+		  	<p>Check out our site at <a href="{{url}}">{{url}}</a></p>
+		  	<p>Date and time posted: {{submitted}}</p>
+		  	{{#if notOwnPost}}<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>{{/if}}
+		  	{{#if ownPost}}<h1>You posted this job.</h1><a href="{{pathFor 'jobEdit'}}"><button class="btn btn-primary">Make Changes</button></a>{{/if}}
 
-  	<div class="col-xs-1 col-sm-2 col-md-2"></div>
-</template>
+		  </div>
+
+
+
+	  	  <div class="col-xs-1 col-sm-2 col-md-2"></div>
+		</template>
 

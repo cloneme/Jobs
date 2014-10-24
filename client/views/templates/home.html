@@ -2,18 +2,20 @@
 <!-- Home view template // Home view template -->
 
 <template name="home">
-	
+		
 		{{#if currentUser}}
 			
-				<div class="col-md-6 main">
+				<div class="col-xs-12 col-sm-6 col-md-6 jobpage" style="text-align: center">
 					
 					{{> myjobs}}
 					
 
 				</div>
 
+			
 
-				<div class="col-md-6 main">
+
+				<div class="col-xs-12 col-sm-5 col-md-5 jobpage" style="text-align: center">
 					
 					{{> view}}
 				</div>
@@ -24,14 +26,20 @@
 			{{> intro}}
 			
 		{{/if}}
+
+		
 	
 </template>
 
 <template name="intro">
-	<div style="margin: 5.5%; padding: 5%; background-color: white">
+	<div class="col-md-3 col-sm-3 col-xs-1"></div>
+	
+	<div class="col-md-6 col-sm-6 col-xs-10" id="intro">
 		<h2>Ola, welcome to Jobb.</h2>
-		<p>Jobb is a lean job platform built with <a href="http://meteor.com">Meteor.</a><br>There was no intention to actually make a job marketplace and as you can see, it is not. <br> Feel free to clone it from <a href="https://github.com/cloneme/Jobs">Github</a> and make it your own. <br> There's nothing much than the basics, but you surely can add 'things' to it.</p>
+		<p>Jobb is a lean job platform built with <a href="http://meteor.com">Meteor.</a> There was no intention to actually make a job marketplace and as you can see, it is not. Feel free to clone it from <a href="https://github.com/cloneme/Jobb">Github</a> and make it your own. There's nothing much than the basics, but you surely can add 'things' to it.</p>
 
 		<h4>Please sign in to try it out.</h4>
 	</div>
+
+	<div class="col-md-3 col-sm-3 col-xs-1"></div>
 </template>

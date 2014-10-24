@@ -22,6 +22,7 @@ Meteor.methods({
 		userId: user._id,
 		author: user.username,
 		submitted: new Date()
+
 	});
 	
 	var postId = Jobs.insert(post);

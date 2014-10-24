@@ -14,7 +14,6 @@ Template.application.events({
 		
 		var jobId = Session.get('jobId');
 		var postedBy = this.author;
-		alert(postedBy);
 		var applicant = Meteor.user().username;
 		
 		var application = {
@@ -23,7 +22,7 @@ Template.application.events({
 			about: $("#about").val(),
 			github: $('#github').val(),
 			jobId: jobId,
-			applicant: applicant, //Meteor.user().username,
+			applicant: applicant,
 			postedBy: postedBy,
 			submitted: new Date()
 			

@@ -1,13 +1,6 @@
 
-<!-- individual applications -->
-<template name="applied">
-	
-		<a href="{{pathFor 'viewapp'}}"><p  class="blocks">{{name}}</p></a>
-	
-</template>
-
-
 <!-- View for list of applications -->
+
 <template name="view">
 	<h1>Applications</h1>
 		{{#each application}}
@@ -20,20 +13,39 @@
 	
 </template>
 
-<!-- View for an individual application -->
-<template name="viewapp">
-	<div class="col-md-3 col-sm-3"></div>
-	
-	<div class="container col-md-6 col-sm-6 jobpage">
-		<br>
-		<h3>Name: {{name}}</h3>
-		<p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
-		<p>{{about}}</p>
-		
-		<p>Applicant username: {{applicant}}</p>
-		<p>Date applied: {{submitted}}</p>
-	</div>
 
-	<div class="col-md-3 col-sm-3"></div>
+
+
+
+<!-- individual applications -->
+
+<template name="applied">
+	
+		<a href="{{pathFor 'viewapp'}}"><p  class="blocks">{{name}}</p></a>
+	
+</template>
+
+
+
+
+
+<!-- View for an individual application -->
+
+<template name="viewapp">
+	<div class="col-sm-3 col-md-3"></div>
+	<div class="col-md-6 col-sm-6" style="">
+		<div class="jobpage">
+			<h3>Name: {{name}}</h3>
+			<p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
+			<p>Github: <a href="{{github}}">{{github}}</a></p>
+			<p>About: {{about}}</p>
+		</div>
+		<div style="background-color: gray; padding: 10px; margin-top: 50px">
+			<p>Username: {{applicant}}</p>
+			<p>Date applied: {{submitted}}</p>
+		</div>
+	</div>
+	<div class="col-sm-3 col-md-3"></div>
+	
 </template>
 

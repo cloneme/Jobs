@@ -8,23 +8,30 @@
 			<div class="row">
 				{{> navigation}}				
 			</div>
-			<div>
-				{{#if loggingIn}}
-				{{spinner}}
-				{{/if}}
-			</div>
-
-			<div class="row" style="text-align: center">
-				<div class="col-sm-12 col-xs-12 col-md-12">
+			
+			<div class="row">
+				
 						
 					{{> yield}}
+
+
+					<script>
+					  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					  ga('create', 'UA-56058264-1', 'auto');
+					  ga('send', 'pageview');
+
+					</script>
 						
-				</div>
+				
 			</div>
 
 			<div class="row">
-				<footer class="col-sm-12 fixed-bottom" style="text-align: center; margin-top: 200px; background-color: teal; padding: 5px">
-					<h2>Hademade in <a href="http://jaaga.in/study">Jaaga</a></h2>
+				<footer class="col-sm-12" style="text-align: center; margin-top: 250px; background-color: teal; padding: 5px">
+					<h3>Hademade in <a style="color: white" href="http://jaaga.in/study">Jaaga</a> with <a style="color: white" href="http://meteor.com">Meteor</a></h3>
 				</footer>
 			</div>
 		</div>
@@ -35,12 +42,12 @@
 <!-- Navigation Template // Navigation Template // Navigation Template -->
 	
 	<template name="navigation">
-		<div class="navbar navbar-default main-nav col-xs-12" role="navigation" style="background-color: orange">
+		<div class="navbar navbar-default main-nav col-xs-12" role="navigation" style="background-color: white">
 			<div class="navbar-header">
             	
                 <button class="btn btn-success navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-
-                	<span class="glyphicon glyphicon-chevron-down"></span>
+                	<span class="glyphicon glyphicon-tasks"></span>
+                	<!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
                 </button>
                 </div>
             
@@ -56,7 +63,7 @@
 	                    </li>
 	                	<li class="nav"><a>Ola, {{currentUser}}!</a>
 	                    </li>
-	                    <li class="nav"><a href="#" id="main-logout">{{> logout}}</a>
+	                    <li class="nav"><a href="#" id="logout">Log Out</a>
 	                    </li>
 	                {{/if}}
                     {{#if noUser}}

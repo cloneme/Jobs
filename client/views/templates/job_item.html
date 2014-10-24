@@ -4,10 +4,7 @@
 
 <template name="jobItem">
 	<a href="{{pathFor 'job'}}" class="indie-job">
-		<h3>{{jobTitle}} <br> @ {{organization}}</h3>
-		
-		<!--<p>Posted by: {{author}} on {{submitted}}</p>-->
+		<h3>{{jobTitle}} <br> @{{organization}}</h3>
 		<a href="{{pathFor 'job'}}"><button class="btn btn-success">View details</button></a>
-		{{#if ownPost}}<a href="{{pathFor 'jobEdit'}}"><button class="btn btn-primary">Edit</button></a>{{/if}}
 	</a>
 </template>	

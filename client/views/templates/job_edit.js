@@ -12,6 +12,7 @@ Template.jobEdit.events({
 			schedule: $(e.target).find('[name=schedule]').val(),
 			compensation: $(e.target).find('[name=compensation]').val(),
 			addedRequirements: $(e.target).find('[name=addedRequirements]').val(),
+			
 		}
 
 		Jobs.update(currentPostId, {$set: postProperties}, function(error) { 

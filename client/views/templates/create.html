@@ -1,82 +1,89 @@
 <template name="create">
-	<div id="create" style="background-color: white; padding: 30px 70px 30px 15px">
-		<h1>Post a job here</h1><br>
-		<form class="form-horizontal" role="form">
-		  
-		  <div class="form-group">
-		    <label for="jobTitle" class="col-sm-3 control-label">Job Title</label>
-		    <div class="col-sm-9">
-		      <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Example: Javascript Dev, Web Developer, etc" required>
-		    </div>
-		  </div>
-		  
-		  <div class="form-group">
-		  	<label for="short-description" class="col-sm-3 control-label">Job Description</label>
-		  	<div class="col-sm-9">
-		  		<textarea rows="3" class="form-control" id="short-description" name="shortDescription" placeholder="A short description" required></textarea>
-		  	</div>
-		  </div>
+	<div class="row">
+		
+		<div class="col-xs-0 col-sm-2 col-md-2"></div>
+		
+		<div class="col-xs-12 col-sm-8 col-md-8">
+			<form class="form-horizontal jobpage" role="form">
+			  
+			  <fieldset>
+			  <legend class="scheduler-border"><h2>Post A Job. Help us eradicate unemployment.</h2></legend>
+			  <div class="form-group">
+			    <label for="jobTitle" class="col-sm-3 control-label">Job Title</label>
+			    <div class="col-sm-9">
+			      <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Example: Javascript Dev, Web Developer, etc" required>
+			    </div>
+			  </div>
+			  
+			  <div class="form-group">
+			  	<label for="short-description" class="col-sm-3 control-label">Job Description</label>
+			  	<div class="col-sm-9">
+			  		<textarea rows="3" class="form-control" id="short-description" name="shortDescription" placeholder="A short description" required></textarea>
+			  	</div>
+			  </div>
 
-		  <div class="form-group">
-		    <label for="organization" class="col-sm-3 control-label">Organization</label>
-		    <div class="col-sm-9">
-		      <input type="text" class="form-control" id="organization" name="organization" 
-		      		placeholder="Name of your organization" required>
-		    </div>
-		  </div>
-
-
-
-		  <div class="form-group">
-		    <label for="url" class="col-sm-3 control-label">Website</label>
-		    <div class="col-sm-9">
-		      <input type="url" class="form-control" id="url" name="url" placeholder="e.g: http://www.yourcompanyname.com" required>
-		    </div>
-		  </div>
-
-		  
-
-		  <div class="form-group">
-		  	<label for="schedule" class="col-sm-3 control-label">Schedule</label>
-		  	<div class="col-sm-9">
-		  		<select class="form-control" id="schedule" name="schedule" required>
-                    <option>Full time</option>
-                    <option>Part time</option>
-                    <option>Full time / Part time</option>
-                    <option>Temporary / Seasonal</option>
-                </select>
-		  	</div>
-		  </div>
+			  <div class="form-group">
+			    <label for="organization" class="col-sm-3 control-label">Organization</label>
+			    <div class="col-sm-9">
+			      <input type="text" class="form-control" id="organization" name="organization" 
+			      		placeholder="Name of your organization" required>
+			    </div>
+			  </div>
 
 
-		  <div class="form-group">
-		  	<label for="compensation" class="col-sm-3 control-label">Compensation</label>
-		  	<div class="col-sm-9">
-		  		<select class="form-control" id="compensation" name="compensation" required>
-                    <option>100 - 200K</option>
-                    <option>200 - 300K</option>
-                    <option>300 - 400K</option>
-                    <option>400 - 500K</option>
-                </select>
-		  	</div>
-		  </div>
+
+			  <div class="form-group">
+			    <label for="url" class="col-sm-3 control-label">Website</label>
+			    <div class="col-sm-9">
+			      <input type="url" class="form-control" id="url" name="url" placeholder="e.g: http://www.yourcompanyname.com" required>
+			    </div>
+			  </div>
+
+			  
+
+			  <div class="form-group">
+			  	<label for="schedule" class="col-sm-3 control-label">Schedule</label>
+			  	<div class="col-sm-9">
+			  		<select class="form-control" id="schedule" name="schedule" required>
+	                    <option>Full time</option>
+	                    <option>Part time</option>
+	                    <option>Temporary / Seasonal</option>
+	                </select>
+			  	</div>
+			  </div>
 
 
-		  
-		  <div class="form-group">
-		  	<label for="added-requirements" class="col-sm-3 control-label">Additional Requirements</label>
-		  	<div class="col-sm-9">
-		  		<textarea rows="4" class="form-control" id="added-requirements" name="addedRequirements" placeholder="Requirements, other than Meteor"></textarea>
-		  	</div>
-		  </div>
+			  <div class="form-group">
+			  	<label for="compensation" class="col-sm-3 control-label">Compensation</label>
+			  	<div class="col-sm-9">
+			  		<select class="form-control" id="compensation" name="compensation" required>
+	                    <option>100 - 200K</option>
+	                    <option>200 - 300K</option>
+	                    <option>300 - 400K</option>
+	                    <option>400 - 500K</option>
+	                </select>
+			  	</div>
+			  </div>
 
-		  
-		  <div class="form-group">
-		    <div class="col-sm-offset-3 col-sm-9">
-		      <button type="submit" class="btn btn-success submit">Submit Job</button>
-		    </div>
-		  </div>
-		</form>
-	
+
+			  
+			  <div class="form-group">
+			  	<label for="added-requirements" class="col-sm-3 control-label">Additional Requirements</label>
+			  	<div class="col-sm-9">
+			  		<textarea rows="4" class="form-control" id="added-requirements" name="addedRequirements" placeholder="Requirements, other than Meteor"></textarea>
+			  	</div>
+			  </div>
+
+			  
+			  <div class="form-group">
+			    <div class="col-sm-offset-3 col-sm-9">
+			      <button type="submit" class="btn btn-success submit">Submit Job</button>
+			    </div>
+			  </div>
+			  </fieldset>
+			</form>
+		</div>
+		
+		<div class="col-xs-0 col-sm-2 col-md-2"></div>
 	</div>
 </template>

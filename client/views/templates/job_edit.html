@@ -1,89 +1,93 @@
 <template name="jobEdit">
-	<div id="create" style="background-color: white">
+	<div class="row">
+		<div class="col-xs-0 col-sm-2 col-md-2"></div>
+
+		<div class="col-xs-12 col-sm-8 col-md-8">
+			<form class="form-horizontal jobpage" role="form" style="padding: 30px">
+			  
+			  <div class="form-group">
+			    <label for="jobTitle" class="col-sm-3 control-label">Job Title</label>
+			    <div class="col-sm-9">
+			      <input type="text" value="{{jobTitle}}" class="form-control" id="jobTitle" name="jobTitle" placeholder="Example: Javascript Dev, Web Developer, etc" required>
+			    </div>
+			  </div>
+			  
+			  <div class="form-group">
+			  	<label for="shortDescription" class="col-sm-3 control-label">Job Description</label>
+			  	<div class="col-sm-9">
+			  		<textarea rows="3" class="form-control" value="{{shortDescription}}" id="shortDescription" name="shortDescription" placeholder="A short description" required></textarea>
+			  	</div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="organization" class="col-sm-3 control-label">Organization</label>
+			    <div class="col-sm-9">
+			      <input type="text" value="{{organization}}" class="form-control" id="organization" name="organization" 
+			      		placeholder="Name of your organization" required>
+			    </div>
+			  </div>
+
+
+
+			  <div class="form-group">
+			    <label for="url" class="col-sm-3 control-label">Website</label>
+			    <div class="col-sm-9">
+			      <input type="url" value="{{url}}" class="form-control" id="url" name="url" placeholder="Your company URL">
+			    </div>
+			  </div>
+
+			  
+
+			  <div class="form-group">
+			  	<label for="schedule" class="col-sm-3 control-label">Schedule</label>
+			  	<div class="col-sm-9">
+			  		<select class="form-control" value="{{schedule}}" id="schedule" name="schedule" required>
+	                    <option>Full time</option>
+	                    <option>Part time</option>
+	                    <option>Full time / Part time</option>
+	                    <option>Temporary / Seasonal</option>
+	                </select>
+			  	</div>
+			  </div>
+
+
+			  <div class="form-group">
+			  	<label for="compensation" class="col-sm-3 control-label">Compensation</label>
+			  	<div class="col-sm-9">
+			  		<select class="form-control" value="{{compensation}}" id="compensation" name="compensation" required>
+	                    <option>100 - 200K</option>
+	                    <option>200 - 300K</option>
+	                    <option>300 - 400K</option>
+	                    <option>400 - 500K</option>
+	                </select>
+			  	</div>
+			  </div>
+
+
+			  
+			  <div class="form-group">
+			  	<label for="added-requirements" class="col-sm-3 control-label">Additional Requirements</label>
+			  	<div class="col-sm-9">
+			  		<textarea rows="4" class="form-control" value="{{addedRequirements}}" id="added-requirements" name="addedRequirements" placeholder="Requirements, other than Meteor"></textarea>
+			  	</div>
+			  </div>
+
+			  
+			  <div class="form-group">
+			    <div class="col-sm-offset-3 col-sm-9">
+			      <input type="submit" value="Submit" class="btn btn-success"/>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+	        	<div class="col-sm-offset-3 col-sm-9">
+	            	<a class="btn btn-danger delete" href="#">Delete post</a>
+	        	</div>
+	    	  </div>
+
+			</form>
+		</div>
 		
-		<form class="form-horizontal" role="form">
-		  
-		  <div class="form-group">
-		    <label for="jobTitle" class="col-sm-3 control-label">Job Title</label>
-		    <div class="col-sm-9">
-		      <input type="text" value="{{jobTitle}}" class="form-control" id="jobTitle" name="jobTitle" placeholder="Example: Javascript Dev, Web Developer, etc" required>
-		    </div>
-		  </div>
-		  
-		  <div class="form-group">
-		  	<label for="shortDescription" class="col-sm-3 control-label">Job Description</label>
-		  	<div class="col-sm-9">
-		  		<textarea rows="3" class="form-control" value="{{shortDescription}}" id="shortDescription" name="shortDescription" placeholder="A short description" required></textarea>
-		  	</div>
-		  </div>
-
-		  <div class="form-group">
-		    <label for="organization" class="col-sm-3 control-label">Organization</label>
-		    <div class="col-sm-9">
-		      <input type="text" value="{{organization}}" class="form-control" id="organization" name="organization" 
-		      		placeholder="Name of your organization" required>
-		    </div>
-		  </div>
-
-
-
-		  <div class="form-group">
-		    <label for="url" class="col-sm-3 control-label">Website</label>
-		    <div class="col-sm-9">
-		      <input type="url" value="{{url}}" class="form-control" id="url" name="url" placeholder="Your company URL">
-		    </div>
-		  </div>
-
-		  
-
-		  <div class="form-group">
-		  	<label for="schedule" class="col-sm-3 control-label">Schedule</label>
-		  	<div class="col-sm-9">
-		  		<select class="form-control" value="{{schedule}}" id="schedule" name="schedule" required>
-                    <option>Full time</option>
-                    <option>Part time</option>
-                    <option>Full time / Part time</option>
-                    <option>Temporary / Seasonal</option>
-                </select>
-		  	</div>
-		  </div>
-
-
-		  <div class="form-group">
-		  	<label for="compensation" class="col-sm-3 control-label">Compensation</label>
-		  	<div class="col-sm-9">
-		  		<select class="form-control" value="{{compensation}}" id="compensation" name="compensation" required>
-                    <option>100 - 200K</option>
-                    <option>200 - 300K</option>
-                    <option>300 - 400K</option>
-                    <option>400 - 500K</option>
-                </select>
-		  	</div>
-		  </div>
-
-
-		  
-		  <div class="form-group">
-		  	<label for="added-requirements" class="col-sm-3 control-label">Additional Requirements</label>
-		  	<div class="col-sm-9">
-		  		<textarea rows="4" class="form-control" value="{{addedRequirements}}" id="added-requirements" name="addedRequirements" placeholder="Requirements, other than Meteor"></textarea>
-		  	</div>
-		  </div>
-
-		  
-		  <div class="form-group">
-		    <div class="col-sm-offset-3 col-sm-9">
-		      <input type="submit" value="Submit" class="btn btn-success"/>
-		    </div>
-		  </div>
-
-		  <div class="form-group">
-        	<div class="col-sm-offset-3 col-sm-9">
-            	<a class="btn btn-danger delete" href="#">Delete post</a>
-        	</div>
-    	  </div>
-
-		</form>
-	
+		<div class="col-xs-0 col-sm-2 col-md-2"></div>
 	</div>
 </template>
