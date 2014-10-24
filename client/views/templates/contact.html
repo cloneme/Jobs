@@ -1,0 +1,53 @@
+<template name="contact">
+	<div class="row">
+		
+		<div class="col-xs-0 col-sm-2 col-md-2"></div>
+		
+		<div class="col-xs-12 col-sm-8 col-md-8">
+			<form class="form-horizontal jobpage" role="form">
+			  
+			  <fieldset>
+			  <legend class="scheduler-border"><h2>Contact.</h2></legend>
+			  
+			  <input id="to" type="hidden" value="prasannapegu@gmail.com"> <!-- recipient mail email address // hidden-->
+			  
+			  <div class="form-group">
+			    <label for="from" class="col-sm-3 control-label">Your email address</label>
+			    <div class="col-sm-9">
+			      <input type="email" class="form-control" id="from" name="from" placeholder="example@example.com" required>
+			    </div>
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="subject" class="col-sm-3 control-label">Subject</label>
+			    <div class="col-sm-9">
+			      <input type="text" class="form-control" id="subject" name="subject" 
+			      		placeholder="Hello" required>
+			    </div>
+			  </div>
+
+
+			  <div class="form-group">
+			  	<label for="text" class="col-sm-3 control-label">Message</label>
+			  	<div class="col-sm-9">
+			  		<textarea rows="4" class="form-control" id="text" name="text" placeholder="Your message here." required></textarea>
+			  	</div>
+			  </div>
+
+			  
+			  <div class="form-group">
+			    <div class="col-sm-offset-3 col-sm-9">
+			      <button id="send" type="submit" class="btn btn-success submit">Send</button>
+			    </div>
+			  </div>
+			  </fieldset>
+			</form>
+		</div>
+		
+		<div class="col-xs-0 col-sm-2 col-md-2"></div>
+	</div>
+</template>
+
+<!-- <template name="contact">
+	<button type="submit" id="send">Send</button>
+</template> -->
