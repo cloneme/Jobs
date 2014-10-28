@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+/*@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 
 .jobpage{
@@ -35,7 +35,7 @@
 }
 
 .indie-job{
-	/*background-color: #5bc4be;*/
+	background-color: #5bc4be;
 	background-color: #F6A926;
 	position: relative;
 	display: inline-block;
@@ -77,3 +77,7 @@ legend.scheduler-border {
     text-align: left !important;
 
 }
+
+
+
+*/
