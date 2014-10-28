@@ -5,9 +5,12 @@
 
 meteor-platform
 iron:router
-spin
 accounts-password
-accounts-ui
+ian:accounts-ui-bootstrap-3
 accounts-base
 email
+mizzao:bootstrap-3
+meteorhacks:kadira
+underscore
+sacha:spin
 
