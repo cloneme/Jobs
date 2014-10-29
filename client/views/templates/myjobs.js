@@ -1,14 +1,4 @@
-
-
-Template.jobs.helpers({ 
-	jobs: function() {
-	return Jobs.find({}, {sort: {submitted: -1}}); },
-
-	
-
-});
-
-
+// Helper for 'myjobs' template
 
 Template.myjobs.helpers({
 	
@@ -21,5 +11,16 @@ Template.myjobs.helpers({
 		if (Jobs.find({userId: Meteor.user()._id}).count() === 0) {
 			return true;
 		};
-	}
+	},
+
+	// noUser: function () {
+	// 	var user = Meteor.user();
+		
+	// 	if (user) {
+	// 		return false;
+	// 	} else {
+	// 		return true;
+	// 	};
+	// }
 });
+
