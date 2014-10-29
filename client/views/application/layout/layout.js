@@ -6,3 +6,33 @@ Template.navigation.events({
 		});
 	}
 });
+
+
+// Navigation template helper
+
+Template.navigation.helpers({
+
+	thisUser: function () {
+			return Meteor.user().username;
+
+	},
+
+	// noUser: function () {
+	// 	var user = Meteor.user();
+		
+	// 	if (!user) {
+	// 		return true;
+	// 	};
+	// }
+
+
+});
+
+Template.navigation.helpers({
+	username: function () {
+		return Meteor.user().username;
+	},
+
+	
+});
+
