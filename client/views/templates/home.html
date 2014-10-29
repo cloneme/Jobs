@@ -3,30 +3,9 @@
 
 <template name="home">
 		<div>
-		{{#if currentUser}}
-			
-				<div class="col-xs-12 col-sm-6 col-md-6 jobpage" style="text-align: center">
-					
-					{{> myjobs}}
-					
-
-				</div>
-
-			
-
-
-				<div class="col-xs-12 col-sm-5 col-md-5 jobpage" style="text-align: center">
-					
-					{{> view}}
-				</div>
-			
-		{{/if}}
-
-		{{#if noUser}}
+		
 			{{> intro}}
 			
-		{{/if}}
-
 		</div>
 	
 </template>
@@ -36,7 +15,7 @@
 	
 	<div class="col-md-6 col-sm-6 col-xs-10" style="font-size: 1.2em" id="intro">
 		<h2>Ola, welcome to Jobb.</h2>
-		<p>Jobb is a lean job platform built with <a href="http://meteor.com">Meteor.</a> There was no intention to actually make a job marketplace and as you can see, it is not. Feel free to clone it from <a href="https://github.com/cloneme/Jobb">Github</a> and make it your own. There's nothing much than the basics, but you surely can add 'things' to it.</p>
+		<p>Jobb is an open-source job platform being built with <a href="http://meteor.com">Meteor.</a> Feel free to clone it from <a href="https://github.com/cloneme/Jobb">Github</a> and make it your own. It's still a very young project so expecting it to be like any other awesome job portal out there would be too much. ;) There's nothing much than the basics, but you surely can add 'things' to it.</p>
 
 		<h4>Please <a href="{{pathFor 'signup'}}">sign up</a> or <a href="{{pathFor 'login'}}">login</a> to try it out.</h4>
 		<h4>Or if you have any queries <br>then please do leave a message <a href="{{pathFor 'contact'}}">here.</a></h4>

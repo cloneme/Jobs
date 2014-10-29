@@ -6,8 +6,13 @@
 	<div class="jobpage col-xs-10 col-sm-8 col-md-8">
 		<!-- <input id="username" type="text" placeholder="username">
 		<input id="password" type="password" placeholder="password">
-		<button id="login">Login</button>
- -->
+		<button id="login">Login</button>-->
+ 
+		{{#if currentUser}}
+			<h1 style="text-align: center">Curious, huh? <br> Now, you know what to do, right?</h1>
+		{{else}}
+
+ 		
 		<form class="form-horizontal" role="form">
 		  
 			  <div class="form-group">
@@ -31,8 +36,8 @@
 			  </div>
 		  
 		</form>
-
-
+		{{/if}}
+		
 	</div>
 	<div class="col-xs-1 col-sm-2 col-md-2"></div>
 </template>
