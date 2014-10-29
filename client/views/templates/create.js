@@ -13,10 +13,7 @@ Template.create.events({
 
 		}
 		
-		/*post._id = Jobs.insert(post);
-
-		    Router.go('job', post);
-		}*/
+		
 
 		Meteor.call('post', post, function(error, id) { 
 			if (error)
