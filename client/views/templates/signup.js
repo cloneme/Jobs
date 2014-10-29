@@ -16,3 +16,21 @@ Template.signup.events({
 		});
 	}
 });
+
+
+Template.signup.helpers({
+
+	noUser: function () {
+		var user = Meteor.user();
+		
+		if (user) {
+			return false;
+			// Route.go('/');
+		} else {
+			return true;
+
+		};
+	}
+
+
+});
