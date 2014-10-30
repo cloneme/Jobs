@@ -1,4 +1,4 @@
-Template.application.helpers({
+Template.aply.helpers({
 	currentUser: function () {
 			return Meteor.user().username;
 
@@ -7,12 +7,11 @@ Template.application.helpers({
 
 
 
-Template.application.events({
+Template.aply.events({
 	"submit form": function (e, err) {
 		
 		e.preventDefault();
 		
-		var jobId = Session.get('jobId');
 		var postedBy = this.author;
 		var applicant = Meteor.user().username;
 		
@@ -21,7 +20,6 @@ Template.application.events({
 			email: $('#email').val(),
 			about: $("#about").val(),
 			github: $('#github').val(),
-			jobId: jobId,
 			applicant: applicant,
 			postedBy: postedBy,
 			submitted: new Date()
@@ -32,7 +30,6 @@ Template.application.events({
 		};
 
 		
-		//alert(applicant);
 		application._id = Applications.insert(application);
 
 		Router.go('/');

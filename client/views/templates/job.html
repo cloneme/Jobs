@@ -15,7 +15,7 @@
 
 		  	<p>Check out our site at <a href="{{url}}">{{url}}</a></p>
 		  	<p>Date and time posted: {{submitted}}</p>
-		  	{{#if notOwnPost}}<a href="{{pathFor 'application'}}"><button class="btn btn-success">Apply for this job</button></a>{{/if}}
+		  	{{#if notOwnPost}}<a href="{{pathFor 'aply'}}"><button class="btn btn-success">Apply for this job</button></a>{{/if}}
 		  	
 		  	{{#if ownPost}}<h1>You posted this job.</h1><a href="{{pathFor 'jobEdit'}}"><button class="btn btn-primary">Make Changes</button></a>{{/if}}
 

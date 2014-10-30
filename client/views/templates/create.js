@@ -1,4 +1,4 @@
-Template.create.events({ 
+Template.crte.events({ 
 	'submit form': function(e) {
 	    e.preventDefault();
 

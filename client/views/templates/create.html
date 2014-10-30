@@ -1,6 +1,6 @@
-<template name="create">
+<template name="crte">
 	<div class="row">
-		
+		{{#if currentUser}}
 		<div class="col-xs-0 col-sm-2 col-md-2"></div>
 		
 		<div class="col-xs-12 col-sm-8 col-md-8">
@@ -85,5 +85,8 @@
 		</div>
 		
 		<div class="col-xs-0 col-sm-2 col-md-2"></div>
+		{{else}}
+			{{> accessDenied}}
+		{{/if}}
 	</div>
 </template>

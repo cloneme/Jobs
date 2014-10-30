@@ -1,6 +1,7 @@
-<template name="application">
+<template name="aply">
+	{{#if currentUser}}
 	<div class="col-xs-1 col-sm-2 col-md-2"></div>
-
+	
 	<div class="jobpage col-xs-10 col-sm-8 col-md-8">
 		
 		<div class="row" style="padding: 20px">
@@ -54,6 +55,9 @@
 		</div>
 	
 	</div>
-
+	
 	<div class="col-xs-1 col-sm-2 col-md-2"></div>
+	{{else}}
+		{{> accessDenied}}
+	{{/if}}
 </template>
