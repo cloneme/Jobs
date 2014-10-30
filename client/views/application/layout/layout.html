@@ -4,10 +4,10 @@
 
 <template name="layout">
 
-{{#if loggingIn}}
+<!-- {{#if loggingIn}}
 {{> spinner}}
-<div style="text-align: center"><h2 style="color: teal">Loading as fast as we can...</h2></div>
-	{{else}}
+<div style="text-align: center"><h4>Loading as fast as we can...</h4></div>
+	{{else}} -->
 	<div class="container-fluid" id="moody">
 		<!-- <div class="container" id="body"> -->
 			
@@ -49,7 +49,7 @@
 			</div>
 		<!-- </div> -->
 	</div>		
-{{/if}}
+<!-- {{/if}} -->
 </template>
 
 
@@ -75,9 +75,9 @@
                     </li> -->
 
 	                    {{#if currentUser}}
-		                    <li class="nav"><a href="{{pathFor 'create'}}">Post A Job</a>
+		                    <li class="nav"><a href="{{pathFor 'crte'}}">Post A Job</a>
 		                    </li>
-		                	<li class="nav"><a href="/{{username}}">Ola, {{thisUser}}!</a>
+		                	<li class="nav"><a href="{{pathFor 'profle'}}">Ola, {{thisUser}}!</a>
 		                    </li>
 		                    <li class="nav"><a href="#" id="logout">Log Out</a>
 		                    </li>
