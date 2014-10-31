@@ -32,6 +32,7 @@
 <!-- View for an individual application -->
 
 <template name="viewapp">
+	{{#if currentUser}}
 	<div class="col-sm-3 col-md-3"></div>
 	<div class="col-md-6 col-sm-6" style="">
 		<div class="jobpage">
@@ -46,6 +47,8 @@
 		</div>
 	</div>
 	<div class="col-sm-3 col-md-3"></div>
-	
+	{{else}}
+		{{> accessDenied}}
+	{{/if}}
 </template>
 
